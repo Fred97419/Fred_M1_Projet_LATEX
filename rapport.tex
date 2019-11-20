@@ -1,0 +1,60 @@
+\documentclass{article}
+
+\usepackage{a4wide}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage[babel=true]{csquotes} % guillemets français
+\usepackage[export]{adjustbox}% http://ctan.org/pkg/adjustbox
+\usepackage{graphicx}
+\graphicspath{{image/}}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage[section]{placeins}
+\hypersetup{colorlinks,linkcolor=,urlcolor=blue}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\title{Rapport de Développement mobile}
+\author{Frédérick Fabre Ferber , M1 Informatique}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Ce rapport va présenter l'élaboration d'une application mobile dans le cadre du cours de \textbf{Développement Mobile} (sous Android uniquement malheureusement), ici un gestionnaire de concerts.
+ Nous verrons ici plusieurs points concernant cette présentation :
+\begin{itemize}
+\item La description générale de l'application
+\item Son architecture globale
+\item Les points à améliorer et les problèmes rencontrés
+\end{itemize}
+\end{abstract}
+
+\section{Description de l'application}
+\label{section:Description de l'application}
+
+Nous avons ici une application de gestion de concerts. 
+
+Un concert dispose de plusieurs informations :
+\begin{itemize}
+\item Son titre 
+\item La date de l’événement
+\item L'heure de l'évènement 
+\item La durée de l'évènement
+\item Sa position (en latitude et longitude)
+\item Et une photo
+\end{itemize}
+
+Elle permet notamment plusieurs interactions avec l'utilisateur : 
+\begin{itemize}
+\item \textbf{Afficher des concerts sur la carte : } Lorsque l'on démarre l'application l'on accède à une carte où tous les concerts enregistrés sont marqués via des marqueurs. Si l'on clique sur le marqueur on obtient les informations (voir ci dessus). Nous avons une certaine position sur cette carte et lorsque l'on se situe à moins de 4 kilomètres d'un des concerts présent une boite de dialogue s'ouvre et nous propose de modifier la position de la carte vers la position du concert.
+\item \textbf{Rajouter un concert} : Si l'on appuie sur le bouton \textit{"Rajouter un concert"} l'application ouvre une autre fenêtre et nous montre un formulaire où l'on va renseigner toutes les informations décrites précédemment via des champs (les champs latitude et longitude étant remplis à l'avance avec notre position). On a également un bouton \textbf{"Ajouter une photo"} qui va définir l'image du concert en prenant une photo via l'appareil photo d'android. 
+\end{itemize}
+
+
+
+
+\end{document}

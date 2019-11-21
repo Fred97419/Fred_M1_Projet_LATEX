@@ -1,1 +1,5 @@
 \BOOKMARK [1][-]{section.1}{Description de l'application}{}% 1
+\BOOKMARK [1][-]{section.2}{Architecture globale de l'application}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Repr\351sentation d'un concert}{section.2}% 3
+\BOOKMARK [3][-]{subsubsection.2.1.1}{Cas particulier de la classe SerializableBitmap}{subsection.2.1}% 4
+\BOOKMARK [2][-]{subsection.2.2}{L'activit\351 MapActivity : Afficher nos concerts sur une carte}{section.2}% 5

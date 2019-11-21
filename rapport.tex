@@ -50,9 +50,70 @@ Un concert dispose de plusieurs informations :
 
 Elle permet notamment plusieurs interactions avec l'utilisateur : 
 \begin{itemize}
-\item \textbf{Afficher des concerts sur la carte : } Lorsque l'on démarre l'application l'on accède à une carte où tous les concerts enregistrés sont marqués via des marqueurs. Si l'on clique sur le marqueur on obtient les informations (voir ci dessus). Nous avons une certaine position sur cette carte et lorsque l'on se situe à moins de 4 kilomètres d'un des concerts présent une boite de dialogue s'ouvre et nous propose de modifier la position de la carte vers la position du concert.
-\item \textbf{Rajouter un concert} : Si l'on appuie sur le bouton \textit{"Rajouter un concert"} l'application ouvre une autre fenêtre et nous montre un formulaire où l'on va renseigner toutes les informations décrites précédemment via des champs (les champs latitude et longitude étant remplis à l'avance avec notre position). On a également un bouton \textbf{"Ajouter une photo"} qui va définir l'image du concert en prenant une photo via l'appareil photo d'android. 
+\item \textbf{Afficher des concerts sur la carte : } Lorsque l'on démarre l'application l'on accède à une carte où tous les concerts enregistrés sont marqués via des marqueurs. Si l'on clique sur le marqueur on obtient les informations (voir ci dessus). Nous avons une certaine position sur cette carte et lorsque l'on se situe à moins de 4 kilomètres d'un des concerts présent une boite de dialogue s'ouvre et nous propose se diriger vers la position du concert.
+\item \textbf{Rajouter un concert} : Si l'on appuie sur le bouton \textit{"Rajouter un concert"} l'application ouvre une autre fenêtre et nous montre un formulaire où l'on va renseigner toutes les informations décrites précédemment via des champs (les champs latitude et longitude étant remplis à l'avance avec notre position). On a également un bouton \textbf{"Ajouter une photo"} qui va définir l'image du concert en prenant une photo via l'appareil photo d'android. Et un bouton \textbf{Ajouter une photo via la galerie} qui va cette fois sélectionner à partir de la galerie.
+\item \textbf{Liste des concerts :} Si l'on appuie sur le bouton \textit{"Liste des concerts"} l'application ouvre une autre fenêtre et affiche via une liste tous les concerts enregistrés, chaque case de la liste va renseigner toutes les informations sur un concert. Il contient un bouton \textit{"GO"} qui va nous diriger vers la position de celui ci et un bouton pour supprimer le concert de la liste. 
 \end{itemize}
+
+Nous avons décrit globalement comment se comportait l'application nous allons maintenant voir plus en détails certaines de ces fonctionnalités. 
+
+\section{Architecture globale de l'application}
+
+\subsection{Représentation d'un concert}
+
+L'application va devoir manipuler des données représentant un concert, nous avons donc un objet \textbf{ConcertWindowData} fait pour ça.
+Il possède comme attributs les mêmes champs décrit dans la section précédente (Voir \ref{section:Description de l'application}). Avec des attributs de type \textbf{double} pour la longitude et la latitude du concert, un objet \textbf{SerializableBitmap} pour la photo du concert (nous y reviendrons juste après) et pour tout le reste des attributs de type \textbf{String}. 
+
+Description de la classe ConcertWindowData : 
+\begin{verbatim}
+public class ConcertWindowData implements Serializable {
+
+    private String nom;
+    private SerializableBitmap image;
+    private String date;
+    private String duree;
+    private String heure;
+
+    private double lat;
+    private double lng;
+    
+    //.... getter et setter 
+\end{verbatim}
+\subsubsection{Cas particulier de la classe SerializableBitmap} 
+Nous le verrons plus tard dans ce rapport mais notre application a besoin de transférer des données entres nos différentes activités et nottament des objets \textbf{ConcertWindowData}. Tout ceci se fait via des Intent qui par défaut ne peuvent envoyer que des types simples et non des objets. On envoie alors les données avec un \textbf{Bundle} par la methode \textbf{putSerializable(Object o)} qui va pouvoir envoyer un objet \textbf{sérialisé} à une activité (on utilise l'interface \textbf{Serializable} pour faire cela). Or la classe Bitmap (qui est la classe pour représenter une image) n'est pas sérialisable ce qui empêche son envoie via un Intent. On utilise alors la classe \textbf{SerializableBitmap} qui va transformer notre image \textbf{Bitmap} en tableau d'entiers (un tableau de pixels) et va reconstituer l'image Bitmap via la methode \textbf{getBitmap()}.
+\begin{verbatim}
+public class SerializableBitmap implements Serializable {
+    private final int[] pixels;
+    private final int width, height;
+    
+    //transforme notre image Bitmap en tableau de pixels
+    public SerializableBitmap(Bitmap bitmap) {
+        width = bitmap.getWidth();
+        height = bitmap.getHeight();
+        pixels = new int[width * height];
+        bitmap.getPixels(pixels, 0, width, 0, 0, width, height);
+    }
+
+    //Reconstruit l'image Bitmap
+    public Bitmap getBitmap() {
+        Bitmap b =  Bitmap.createBitmap(pixels, width, height, Bitmap.Config.ARGB_8888);
+        return b;
+	}
+
+}
+\end{verbatim}
+\textit{C'est aussi pour la même raison que l'on utilise deux variables de type \textbf{double} au lieu d'utiliser un objet \textbf{LatLng} car il n'est pas sérialisable non plus.})
+
+\subsection{L'activité MapActivity}
+
+C'est l'activité maîtresse de notre application, c'est elle qui va appeler les autres activités pour leur envoyer des données, en recevoir, mettre à jour la carte sur laquelle on affichera des marqueurs représentant nos concerts. 
+
+\subsubsection{Affichage de la carte}
+
+Pour l'affichage d'une carte on utilise l'api \textbf{GoogleMap} de Google, l'activité hérite alors de \textbf{FragmentActivity} et va récupérer le fragment pour afficher notre carte. Elle se manipulera ensuite avec un objet \textbf{GoogleMap} et une methode surchargée \textbf{onMapReady()} qui est appelé au démarrage de la carte. 
+C'est dans cette méthode que l'on va demander la permission pour la localisation si ce n'est pas encore fait puis  charger tout nos marqueurs représentant nos concerts. 
+
+
 
 
 

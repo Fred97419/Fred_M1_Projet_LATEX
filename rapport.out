@@ -2,4 +2,14 @@
 \BOOKMARK [1][-]{section.2}{Architecture globale de l'application}{}% 2
 \BOOKMARK [2][-]{subsection.2.1}{Repr\351sentation d'un concert}{section.2}% 3
 \BOOKMARK [3][-]{subsubsection.2.1.1}{Cas particulier de la classe SerializableBitmap}{subsection.2.1}% 4
-\BOOKMARK [2][-]{subsection.2.2}{L'activit\351 MapActivity : Afficher nos concerts sur une carte}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.2}{L'activit\351 MapActivity}{section.2}% 5
+\BOOKMARK [3][-]{subsubsection.2.2.1}{Affichage de la carte et marqueurs}{subsection.2.2}% 6
+\BOOKMARK [3][-]{subsubsection.2.2.2}{Alerte de concert \340 proximit\351}{subsection.2.2}% 7
+\BOOKMARK [3][-]{subsubsection.2.2.3}{Sauvegarde de la liste et changements de configuration}{subsection.2.2}% 8
+\BOOKMARK [3][-]{subsubsection.2.2.4}{D\351tection de secousse}{subsection.2.2}% 9
+\BOOKMARK [2][-]{subsection.2.3}{L'activit\351 AddConcertActivity}{section.2}% 10
+\BOOKMARK [3][-]{subsubsection.2.3.1}{Renseignement des informations}{subsection.2.3}% 11
+\BOOKMARK [3][-]{subsubsection.2.3.2}{Envoie \340 l'activit\351 MapActivity}{subsection.2.3}% 12
+\BOOKMARK [2][-]{subsection.2.4}{L'activit\351 ListeConcertActivity}{section.2}% 13
+\BOOKMARK [2][-]{subsection.2.5}{R\351cup\351ration des donn\351es depuis MapActivity}{section.2}% 14
+\BOOKMARK [1][-]{section.3}{Probl\350mes rencontr\351s et am\351liorations possibles}{}% 15

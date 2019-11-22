@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.10.24)  21 NOV 2019 18:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.11.7)  23 NOV 2019 01:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -693,26 +693,30 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 ))
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
- (./rapport.aux)
+ (./rapport.aux
+
+LaTeX Warning: Label `fig:concert_layout' multiply defined.
+
+)
 \openout1 = `rapport.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Info: Redefining \degres on input line 22.
-LaTeX Info: Redefining \dots on input line 22.
-LaTeX Info: Redefining \up on input line 22.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Info: Redefining \degres on input line 21.
+LaTeX Info: Redefining \dots on input line 21.
+LaTeX Info: Redefining \up on input line 21.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count129
@@ -744,7 +748,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box31
-Package hyperref Info: Link coloring ON on input line 22.
+Package hyperref Info: Link coloring ON on input line 21.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -754,20 +758,20 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count135
 )
-LaTeX Info: Redefining \ref on input line 22.
-LaTeX Info: Redefining \pageref on input line 22.
-LaTeX Info: Redefining \nameref on input line 22.
+LaTeX Info: Redefining \ref on input line 21.
+LaTeX Info: Redefining \pageref on input line 21.
+LaTeX Info: Redefining \nameref on input line 21.
 
 (./rapport.out) (./rapport.out)
 \@outlinefile=\write3
 \openout3 = `rapport.out'.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 25.
+LaTeX Font Info:    Try loading font information for U+msa on input line 24.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 25.
+LaTeX Font Info:    Try loading font information for U+msb on input line 24.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -779,52 +783,227 @@ LaTeX Font Info:    Try loading font information for T1+cmtt on input line 68.
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-Overfull \hbox (37.30096pt too wide) in paragraph at lines 104--104
+Overfull \hbox (37.30096pt too wide) in paragraph at lines 105--105
 []        \T1/cmtt/m/n/10 Bitmap b =  Bitmap.createBitmap(pixels, width, height
 , Bitmap.Config.ARGB_8888);[] 
  []
 
 [2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 114.
- [3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 114.
+<./img/map.png, id=84, 1084.05pt x 1927.2pt>
+File: ./img/map.png Graphic file (type png)
+<use ./img/map.png>
+Package pdftex.def Info: ./img/map.png  used on input line 113.
+(pdftex.def)             Requested size: 151.76596pt x 269.80617pt.
+<./img/concert_layout.png, id=87, 360.34625pt x 182.6825pt>
+File: ./img/concert_layout.png Graphic file (type png)
+<use ./img/concert_layout.png>
+Package pdftex.def Info: ./img/concert_layout.png  used on input line 130.
+(pdftex.def)             Requested size: 216.20941pt x 109.61034pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (14.81134pt too wide) in paragraph at lines 167--167
+ []\T1/cmtt/m/n/10 public class ConcertInfoWindowAdapter implements GoogleMap.I
+nfoWindowAdapter {[] 
+ []
+
+[3 <./img/map.png>]
+Overfull \hbox (77.79596pt too wide) in paragraph at lines 167--167
+ []        \T1/cmtt/m/n/10 //Description de la fenêtre en récupérant les valeur
+s de l'objet ConcertWindowData[] 
+ []
+
+
+Overfull \hbox (35.80621pt too wide) in paragraph at lines 167--167
+ []        \T1/cmtt/m/n/10 ConcertWindowData concertWindowData = (ConcertWindow
+Data) marker.getTag();[] 
+ []
+
+
+Overfull \hbox (125.03442pt too wide) in paragraph at lines 167--167
+ []        \T1/cmtt/m/n/10 duree.setText(concertWindowData.getDuree()+" "+res.g
+etString(R.string.info_adapter_heure));[] 
+ []
+
+<./img/proche.png, id=99, 1084.05pt x 1927.2pt>
+File: ./img/proche.png Graphic file (type png)
+<use ./img/proche.png>
+Package pdftex.def Info: ./img/proche.png  used on input line 180.
+(pdftex.def)             Requested size: 140.93144pt x 250.5448pt.
+[4 <./img/concert_layout.png>]
+Overfull \hbox (4.3139pt too wide) in paragraph at lines 201--201
+ []\T1/cmtt/m/n/10 private void saveListeToJson(ArrayList<ConcertWindowData> li
+st, String key){[] 
+ []
+
+
+Overfull \hbox (56.80109pt too wide) in paragraph at lines 201--201
+ []        \T1/cmtt/m/n/10 SharedPreferences prefs = PreferenceManager.getDefau
+ltSharedPreferences(this);[] 
+ []
+
+
+Overfull \hbox (30.5575pt too wide) in paragraph at lines 201--201
+ []        \T1/cmtt/m/n/10 String json = gson.toJson(list); //transforme la lis
+te de concert en Json[] 
+ []
+
+[5 <./img/proche.png>]
+Overfull \hbox (56.80109pt too wide) in paragraph at lines 215--215
+ []        \T1/cmtt/m/n/10 SharedPreferences prefs = PreferenceManager.getDefau
+ltSharedPreferences(this);[] 
+ []
+
+
+Overfull \hbox (83.04468pt too wide) in paragraph at lines 215--215
+ []        \T1/cmtt/m/n/10 String json = prefs.getString(key, null); // on récu
+père notre liste au format Json[] 
+ []
+
+
+Overfull \hbox (20.06006pt too wide) in paragraph at lines 215--215
+ []        \T1/cmtt/m/n/10 Type type = new TypeToken<ArrayList<ConcertWindowDat
+a>>() {}.getType();[] 
+ []
+
+
+Overfull \hbox (121.28046pt too wide) in paragraph at lines 243--243
+[]\T1/cmtt/m/n/10 public class MapsActivity extends FragmentActivity implements
+ GoogleMap.OnMyLocationButtonClickListener,[] 
+ []
+
+
+Overfull \hbox (0.55994pt too wide) in paragraph at lines 243--243
+[]        \T1/cmtt/m/n/10 savedInstanceState.putSerializable("liste_concert_sav
+e" , listeConcerts);[] 
+ []
+
+[6]
+<./img/ajouter.png, id=117, 1084.05pt x 1927.2pt>
+File: ./img/ajouter.png Graphic file (type png)
+<use ./img/ajouter.png>
+Package pdftex.def Info: ./img/ajouter.png  used on input line 282.
+(pdftex.def)             Requested size: 140.93144pt x 250.5448pt.
+ [7 <./img/ajouter.png>]
+<./img/photo_appareil.png, id=126, 1084.05pt x 1927.2pt>
+File: ./img/photo_appareil.png Graphic file (type png)
+<use ./img/photo_appareil.png>
+Package pdftex.def Info: ./img/photo_appareil.png  used on input line 344.
+(pdftex.def)             Requested size: 67.93535pt x 120.77318pt.
+<./img/photo_gal.png, id=127, 1084.05pt x 1927.2pt>
+File: ./img/photo_gal.png Graphic file (type png)
+<use ./img/photo_gal.png>
+Package pdftex.def Info: ./img/photo_gal.png  used on input line 345.
+(pdftex.def)             Requested size: 67.93535pt x 120.77318pt.
+ [8]
+<./img/liste.png, id=133, 1084.05pt x 1927.2pt>
+File: ./img/liste.png Graphic file (type png)
+<use ./img/liste.png>
+Package pdftex.def Info: ./img/liste.png  used on input line 393.
+(pdftex.def)             Requested size: 140.93144pt x 250.5448pt.
+<./img/row_concert.png, id=134, 542.025pt x 133.49875pt>
+File: ./img/row_concert.png Graphic file (type png)
+<use ./img/row_concert.png>
+Package pdftex.def Info: ./img/row_concert.png  used on input line 400.
+(pdftex.def)             Requested size: 216.80615pt x 53.39854pt.
+ [9 <./img/photo_appareil.png> <./img/photo_gal.png>] [10 <./img/liste.png> <./
+img/row_concert.png>]
+Overfull \hbox (21.55481pt too wide) in paragraph at lines 432--432
+[]                \T1/cmtt/m/n/10 listeBundle.putSerializable("liste_avec_supre
+ssion" , listeConcerts);[] 
+ []
+
+
+Overfull \hbox (4.3139pt too wide) in paragraph at lines 498--498
+ []\T1/cmtt/m/n/10 public void onActivityResult(int requestCode, int resultCode
+, Intent data) {[] 
+ []
+
+
+Overfull \hbox (77.79596pt too wide) in paragraph at lines 498--498
+ []                    \T1/cmtt/m/n/10 image = BitmapFactory.decodeResource(get
+Resources() , R.drawable.kal);[] 
+ []
+
+
+Overfull \hbox (20.06006pt too wide) in paragraph at lines 498--498
+ []                    \T1/cmtt/m/n/10 serializableImage = new SerializableBitm
+ap(image_compress);[] 
+ []
+
+
+Overfull \hbox (30.5575pt too wide) in paragraph at lines 498--498
+ []                    \T1/cmtt/m/n/10 serializableImage = (SerializableBitmap)
+ extras.get("image");[] 
+ []
+
+[11]
+Overfull \hbox (51.55237pt too wide) in paragraph at lines 498--498
+ []                \T1/cmtt/m/n/10 addConcertToList(extras.getDouble("lati") , 
+extras.getDouble("longi")[] 
+ []
+
+
+Overfull \hbox (46.30365pt too wide) in paragraph at lines 521--521
+ []\T1/cmtt/m/n/10 public static Bitmap scaleDownBitmap(Bitmap photo, int newHe
+ight, Context context) {[] 
+ []
+
+
+Overfull \hbox (83.04468pt too wide) in paragraph at lines 521--521
+ []        \T1/cmtt/m/n/10 final float densityMultiplier = context.getResources
+().getDisplayMetrics().density;[] 
+ []
+
+[12] (./rapport.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 33--36
+[]\T1/cmr/m/n/10 How to pass an ob-ject from one ac-ti-vity to ano-ther on
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 33--36
+\T1/cmr/m/n/10 an-droid.  [][]$\T1/cmtt/m/n/10 https : / / stackoverflow . com 
+/ questions / 2736389 /
+ []
+
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 535.
+ [13]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 535.
  (./rapport.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 114.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 114.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 535.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 535.
+Package rerunfilecheck Info: File `rapport.out' has not changed.
+(rerunfilecheck)             Checksum: D6DE5A0FD237B95925DEE051D07C84B5;1324.
 
 
-Package rerunfilecheck Warning: File `rapport.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+LaTeX Warning: There were multiply-defined labels.
 
-Package rerunfilecheck Info: Checksums for `rapport.out':
-(rerunfilecheck)             Before: 40851F52BE947812E04415952B30F3E5;418
-(rerunfilecheck)             After:  B84D2DC7502E932FE5A957692D9BC6B8;432.
  ) 
 Here is how much of TeX's memory you used:
- 9263 strings out of 492982
- 131841 string characters out of 6134895
- 241952 words of memory out of 5000000
- 12661 multiletter control sequences out of 15000+600000
- 16916 words of font info for 44 fonts, out of 8000000 for 9000
+ 9387 strings out of 492982
+ 133764 string characters out of 6134896
+ 244861 words of memory out of 5000000
+ 12733 multiletter control sequences out of 15000+600000
+ 19288 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,6n,37p,914b,432s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{section.3} has been referenced but does not exist
-, replaced by a fixed one
-
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texmf/fo
-nts/type1/public/cm-super/sfbi1000.pfb></usr/share/texmf/fonts/type1/public/cm-
-super/sfbx0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb><
-/usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fon
-ts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-s
-uper/sfrm0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></
-usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/font
-s/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf/fonts/type1/public/cm-su
-per/sfti1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on rapport.pdf (3 pages, 204602 bytes).
+ 38i,12n,37p,915b,640s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texmf/
+fonts/type1/public/cm-super/sfbi1000.pfb></usr/share/texmf/fonts/type1/public/c
+m-super/sfbx0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb
+></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/f
+onts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm
+-super/sfcc1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0900.pfb>
+</usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fo
+nts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-
+super/sfrm1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb><
+/usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on rapport.pdf (13 pages, 2662303 bytes).
 PDF statistics:
- 91 PDF objects out of 1000 (max. 8388607)
- 74 compressed objects within 1 object stream
- 10 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 242 PDF objects out of 1000 (max. 8388607)
+ 199 compressed objects within 2 object streams
+ 46 named destinations out of 1000 (max. 500000)
+ 161 words of extra memory for PDF output out of 10000 (max. 10000000)
 

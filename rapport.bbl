@@ -1,0 +1,45 @@
+\begin{thebibliography}{1}
+
+\bibitem{AndroidDOc}
+Android developers.
+\newblock \url{https://developer.android.com/docs}.
+
+\bibitem{AndroidGoogleMap}
+Overview | maps sdk for android | google developers.
+\newblock
+  \url{https://developers.google.com/maps/documentation/android-sdk/intro}.
+
+\bibitem{bitMap}
+Android: Saving bitmap as serializable object.
+\newblock
+  \url{http://xperience57.blogspot.com/2015/09/android-saving-bitmap-as-serializable.html}.
+
+\bibitem{bundleProb}
+Is there some limits in android' bundle?
+\newblock
+  \url{https://stackoverflow.com/questions/8552514/is-there-some-limits-in-android-bundle}.
+
+\bibitem{galery}
+[android example] pick image from gallery or camera.
+\newblock
+  \url{https://androidclarified.com/pick-image-gallery-camera-android/}.
+
+\bibitem{infoWindow2}
+Google maps android custom info window example - zoftino.
+\newblock
+  \url{https://www.zoftino.com/google-maps-android-custom-info-window-example}.
+
+\bibitem{intentObject}
+How to pass an object from one activity to another on android.
+\newblock
+  \url{https://stackoverflow.com/questions/2736389/how-to-pass-an-object-from-one-activity-to-another-on-android}.
+
+\bibitem{proxi}
+How to detect shake event with android?
+\newblock
+  \url{https://stackoverflow.com/questions/5271448/how-to-detect-shake-event-with-android}.
+
+\bibitem{WindowInfo}
+Info windows | maps sdk for android | google developers.
+
+\end{thebibliography}
